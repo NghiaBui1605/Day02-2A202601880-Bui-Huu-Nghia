@@ -12,15 +12,15 @@ Bảng dưới đây ghi chép lại các hoạt động cá nhân tôi đã tha
 
 | Hoạt động | Tôi đã làm gì cụ thể? | Kết quả & Tác động tới bài làm của nhóm |
 |---|---|---|
-| **Scan cá nhân** | Scan 10 vấn đề thực tế, tập trung vào bài toán cá nhân chọn lựa: **"Khó khăn khi lựa chọn món nên nấu / nên ăn theo sức khỏe & nguyên liệu sẵn có"** (Problem Rank 1), cùng với bài toán quên uống thuốc và bác sĩ theo dõi. | Đóng góp 3 candidate problems thiết thực vào danh sách 33 bài toán chung của nhóm. |
-| **Pitch Problem Card** | Trình bày pitch Problem Card #1 (*Khó khăn khi chọn món nên nấu/nên ăn*) trong 2 phút với đủ 5 bước workflow và baseline 25 phút đắn đo mỗi ngày. | Chia sẻ bài toán thực tế với nhóm để cùng thảo luận và đối chiếu với các candidate khác. |
+| **Scan cá nhân** | Scan 10 vấn đề thực tế và chuẩn bị 3 candidate để đưa vào phiên hội tụ của nhóm. | Đóng góp 3 candidate problems vào danh sách 33 bài toán chung của nhóm; các candidate này được dùng để so sánh trước khi nhóm chốt bài toán cuối. |
+| **Pitch Problem Card** | Trình bày một Problem Card cá nhân trong 2 phút, có workflow 5 bước và baseline thời gian cụ thể. | Cung cấp một phương án đối chiếu để nhóm đánh giá actor, bottleneck, metric và mức phù hợp với AI. |
 | **Challenge bài của bạn khác** | Đặt câu hỏi phản biện bài "Tra cứu quyết định cũ trên Discord" của Tiến Anh về việc giải pháp keyword search thông thường đã đủ chưa. | Giúp nhóm phân biệt rõ bài toán nào thực sự cần AI, bài toán nào chỉ cần Search/Rule truyền thống. |
 | **Gom trùng / Cluster** | Cùng nhóm phân loại 33 candidate problems thành 4 cụm lớn (Sức khỏe & Dinh dưỡng, Phân loại sự cố khẩn cấp, Tóm tắt tài liệu, Quản lý task). | Tạo cấu trúc phân tích rõ ràng để nhóm tiến hành shortlist. |
 | **Chọn candidate problem** | Cùng nhóm thảo luận, so sánh các candidate problems từ 11 thành viên dựa trên 7 tiêu chí. | Tích cực đóng góp ý kiến khách quan để nhóm tiến tới hội tụ đồng thuận. |
-| **Validation / Research** | Tìm hiểu các ứng dụng gợi ý công thức và thực đơn trên thị trường (Cookpad, ShopeeFood review) để tìm khoảng trống. | Nhận diện được điểm nghẽn: các ứng dụng hiện tại chưa kết hợp tốt giữa kiểm tra bối cảnh sức khỏe/bệnh lý và nguyên liệu sẵn có trong tủ lạnh. |
+| **Validation / Research** | Cùng nhóm đối chiếu các công cụ tổng hợp tài liệu như NotebookLM và Notion AI với workflow làm đề cương ôn thi. | Làm rõ rằng việc gom tài liệu có thể chuẩn hóa bằng Rule, còn tóm tắt và draft đề cương là bước AI hỗ trợ tốt hơn nhưng vẫn cần sinh viên kiểm tra. |
 | **Workflow nhóm** | Hỗ trợ nhóm thiết kế các luồng quy trình Before/After minh họa cho các bài toán shortlist. | Giúp nhóm trực quan hóa các điểm nghẽn thời gian và vị trí can thiệp AI. |
 | **Problem Statement** | Thảo luận cùng nhóm các field quan trọng của Problem Statement (Actor, Bottleneck, Metric, Boundary). | Giúp nhóm sẵn sàng xây dựng Problem Statement v0/v1 chặt chẽ khi chốt bài toán cuối. |
-| **Rule / Workflow / Agent** | Lập luận bảo vệ quan điểm chọn mô hình **AI-Supported Workflow** (gợi ý thực đơn/quy trình có sự kiểm soát duyệt của con người) thay vì Agent tự động rủi ro. | Định hình tư duy ứng dụng AI an toàn và thiết thực cho nhóm. |
+| **Rule / Workflow / Agent** | Lập luận chọn **AI-Supported Workflow**: Rule để gom nguồn, AI tóm tắt và draft đề cương, sinh viên kiểm tra trước khi dùng. | Làm rõ vì sao workflow có kiểm soát phù hợp hơn Agent tự động truy cập Drive/chat/email. |
 | **Final Decision** | Đóng góp ý kiến vào tiêu chí đánh giá Go / Not Yet / No-Go và kịch bản Rollback cho dự án. | Giúp nhóm sẵn sàng cho quyết định Go với kịch bản Pilot nhỏ an toàn. |
 
 ---
@@ -31,38 +31,36 @@ Tôi đã sử dụng AI như một trợ lý gợi ý và phản biện kiến 
 
 | Phase | Tôi dùng AI để làm gì? | AI hữu ích ở điểm nào? | AI sai / hời hợt / ngây thơ ở đâu? | Tôi đã sửa gì bằng nhận định cá nhân? |
 |---|---|---|---|---|
-| **Phase 1: Individual Scan** | Đưa mô tả bối cảnh cá nhân (đắn đo chọn món ăn hàng ngày) và nhờ AI gợi ý thêm góc nhìn theo 4 lăng kính. | Giúp gợi ý thêm lăng kính về lãng phí nguyên liệu trong tủ lạnh. | AI gợi ý các ý tưởng rất chung chung kiểu "xây đầu bếp trợ lý AI toàn năng". | Bỏ toàn bộ các ý tưởng chung chung; chỉ giữ lại bài toán có quy trình đắn đo 25' và dấu hiệu thời gian thật. |
-| **Phase 2: Problem Card** | Nhờ ChatGPT đóng vai Skeptical PM để phản biện Problem Card #1 (*Khó khăn khi chọn món nên nấu/nên ăn*). | Chỉ ra điểm yếu: nếu chỉ gợi ý công thức chung chung thì Google/Cookpad đã có sẵn. | AI đề xuất tự động đặt mua nguyên liệu trên siêu thị online mà không cần hỏi ý kiến người dùng. | Bổ sung bối cảnh "Cảnh báo sức khỏe/bệnh lý + Nguyên liệu sẵn có" và siết chặt bước con người tự chọn món. |
-| **Phase 5: Workflow** | Nhờ AI chuyển bảng mô tả các bước thành mã Mermaid flowchart. | Tạo mã Mermaid rất nhanh, tiết kiệm thời gian vẽ hình thủ công. | AI gộp bước Nhận diện nguyên liệu và bước Gợi ý thực đơn thành 1 bước duy nhất. | Tách lại thành 2 bước riêng biệt: Bước 1 Parse nguyên liệu/sức khỏe $\rightarrow$ Bước 2 Generate Top 3 thực đơn. |
-| **Phase 4: Research** | Tìm kiếm các ứng dụng gợi ý món ăn và thực đơn hiện có trên thị trường. | Gợi ý đúng các app như Cookpad, MyFitnessPal, Mealime. | AI tự bịa ra số liệu "giảm 90% lãng phí thực phẩm" mà không có dẫn nguồn verify. | Kiểm tra lại tính năng thực tế từ trang chủ chính thức, loại bỏ các claim số liệu không căn cứ. |
-| **Phase 6: Decision** | Hỏi AI: "Bài toán này nên chọn Rule, Workflow hay Agent?". | Phân tích rõ được sự khác biệt về rủi ro vận hành giữa 3 cấp độ. | AI xu hướng khuyên chọn "Agent tự động gọi ship đồ ăn". | Bác bỏ lời khuyên của AI, giữ vững quyết định chọn **Workflow** để con người hoàn toàn chủ động quyết định bữa ăn của mình. |
+| **Phase 1: Individual Scan** | Đưa các quan sát cá nhân vào AI để mở rộng theo 4 lăng kính scan. | Giúp tôi nhìn thêm các dấu hiệu có thể đo như tần suất, thời gian và hậu quả nếu không xử lý. | AI nêu nhiều ý tưởng quá rộng, không gắn với pain thực tế của tôi. | Loại các ý tưởng chung chung; chỉ giữ những candidate có actor, workflow và dấu hiệu thật để mang vào thảo luận nhóm. |
+| **Phase 2: Problem Card** | Nhờ ChatGPT đóng vai Skeptical PM để phản biện Problem Card cá nhân. | Chỉ ra các lỗ hổng về actor, metric và phương án non-AI. | AI có xu hướng đề xuất tự động hóa quá mức trước khi làm rõ boundary. | Bổ sung bước con người kiểm soát và dùng card này như một candidate để so sánh, thay vì mặc định biến nó thành giải pháp của nhóm. |
+| **Phase 5: Workflow** | Nhờ AI chuyển bảng mô tả workflow tổng hợp tài liệu thành mã Mermaid. | Tạo mã Mermaid nhanh để nhóm xem lại luồng trước/sau. | AI gộp bước AI tóm tắt nguồn và bước AI draft đề cương thành một bước, làm mờ vị trí kiểm soát chất lượng. | Tách rõ: AI tóm tắt từng nguồn $\rightarrow$ AI draft theo template $\rightarrow$ sinh viên kiểm và đối chiếu đề cương giảng viên. |
+| **Phase 4: Research** | Tìm các công cụ tổng hợp, hỏi đáp và tạo tài liệu học từ nguồn người dùng cung cấp. | Gợi ý đúng NotebookLM và Notion AI, giúp nhóm thấy các công cụ sẵn có đã hỗ trợ được một phần workflow. | AI đưa ra vài claim về hiệu quả học tập không kèm nguồn kiểm chứng. | Chỉ giữ lại thông tin kiểm tra được từ trang chính thức; không dùng các số liệu chưa xác minh. |
+| **Phase 6: Decision** | Hỏi AI: "Bài toán tổng hợp tài liệu ôn thi nên chọn Rule, Workflow hay Agent?" | Giúp phân biệt rõ phạm vi và rủi ro của ba mức giải pháp. | AI nghiêng về Agent tự quét Drive/chat/email để tự tìm tài liệu. | Bác bỏ đề xuất này vì yêu cầu quyền truy cập rộng và dễ lấy sai nguồn; chọn **Workflow** với người dùng tự gom nguồn và kiểm nội dung. |
 
 ---
 
 # 3. Phản Tư Câu Hỏi Mở (Open Reflection)
 
 ### 3.1 Tôi học được gì khi nghe 33 Problems của các bạn khác trong nhóm 11 người?
-Khi nghe 10 bạn còn lại trong nhóm pitch 30 bài toán khác nhau (từ sự cố tòa nhà khi mưa lũ của Đức, rà soát Rubric của Tiến Anh, đến trace bug Production của Tuấn Việt), tôi nhận ra một bài học lớn: **Một bài toán AI tốt không nhất thiết phải là bài toán quá phức tạp hay viễn tưởng, mà phải là bài toán có Điểm nghẽn (Bottleneck) thực sự rõ ràng và Người gặp vấn đề (Actor) đau đớn hàng ngày.** Bài toán *Khó khăn khi chọn món nên nấu/nên ăn* của tôi tuy rất đỗi đời thường nhưng giải quyết trực tiếp 20-30 phút đắn đo mỗi ngày của người nấu ăn.
+Khi nghe 10 bạn còn lại trong nhóm pitch 30 bài toán khác nhau (từ sự cố tòa nhà khi mưa lũ của Đức, rà soát Rubric của Tiến Anh, đến trace bug Production của Tuấn Việt), tôi nhận ra một bài học lớn: **Một bài toán AI tốt không nhất thiết phải phức tạp hay viễn tưởng; nó cần có actor, workflow và bottleneck rõ ràng.** Bài toán nhóm chọn — sinh viên gom tài liệu rải rác để làm đề cương ôn thi — thuyết phục vì nhóm mô tả được cụ thể thời gian mất ở từng bước và kiểm chứng pain này với các bạn cùng lớp.
 
 ### 3.2 Nhóm có lúc nào bị "Solution-First" (Nghĩ giải pháp trước khi hiểu bài toán) không?
-Có! Ở Phase 3, khi thảo luận về bài toán chọn món ăn, một thành viên đã đề xuất ngay: *"Hay là mình làm một AI Agent tự động kết nối với tủ lạnh thông minh, thấy đồ ăn sắp hỏng là tự động bật loa nhắc nấu món đó ngay!"*.  
-Là người đang học cơ bản về AI, tôi nhận thấy ngay sự cồng kềnh đó và cùng nhóm quay về nguyên tắc: **"Problem first, Workflow first"**. Nhóm tự hỏi: *"Bước nghẽn nhất hiện tại là gì? Có phải là thiếu loa nhắc không? Không, bước nghẽn là việc đắn đo 20-30 phút không biết món nào vừa hợp khẩu vị, vừa đúng sức khỏe và tận dụng đồ sẵn có."* Nhờ phân tích kỹ từng bước workflow, nhóm đã nhất trí hướng giải pháp Workflow nhẹ nhàng trên mobile app.
+Có. Khi thảo luận bài toán tổng hợp tài liệu ôn thi, có ý kiến đề xuất làm ngay một Agent tự vào Drive, chat và email để tự tìm tất cả tài liệu, tự chọn nguồn rồi tự tạo đề cương. Nhóm đã quay về nguyên tắc **“Problem first, Workflow first”**: bottleneck thật là gom nguồn rải rác và cấu trúc lại nội dung, còn các bước sau đó khá cố định. Vì vậy, nhóm chọn Rule để chuẩn hóa việc gom nguồn, rồi dùng AI trong workflow tóm tắt/draft; sinh viên vẫn kiểm và chốt nội dung.
 
 ### 3.3 Tôi có thay đổi ý kiến sau khi bị nhóm Challenge không?
-Có. Ban đầu trong Problem Card cá nhân, tôi từng nghĩ: *"AI sẽ tự động chỉ định luôn 1 món duy nhất để người dùng nấu cho nhanh mà không cần đắn đo"*.  
-Khi pitch trước nhóm, các bạn đã challenge rất mạnh: *"Khẩu vị mỗi ngày của con người đổi khác liên tục, nếu AI ép chọn 1 món mà người dùng không thích ăn hôm đó thì họ sẽ bỏ app ngay!"*. Lời challenge này giúp tôi nhận ra tầm quan trọng của việc tôn trọng trải nghiệm người dùng. Tôi đã bổ sung ngay bước **AI gợi ý Top 3 món ăn để con người giữ quyền quyết định cuối cùng (Human Decision Boundary)**.
+Có. Ban đầu tôi nghĩ chỉ cần gom tài liệu vào một thư mục chung là đã giải quyết phần lớn vấn đề. Khi thảo luận, nhóm challenge rằng việc lưu chung chỉ giảm thời gian tìm file, nhưng chưa giảm được công sức đọc, lọc trọng tâm và cấu trúc thành đề cương. Sau challenge này, tôi đồng ý rằng Rule là cần thiết nhưng không đủ; AI chỉ nên hỗ trợ tóm tắt và draft, còn sinh viên phải đối chiếu tài liệu gốc và đề cương giảng viên trước khi chốt.
 
 ### 3.4 Đóng góp thực sự của tôi vào Artifact cuối cùng của nhóm là gì?
 Tôi đóng góp 3 phần chính:
-1. **Đóng góp Bài toán cá nhân chất lượng:** Chuẩn bị bài toán *Khó khăn khi chọn món nên nấu/nên ăn* sắc bén với đủ 5 bước workflow và baseline 25 phút đắn đo.
+1. **Đóng góp candidate cá nhân:** Chuẩn bị Problem Card có workflow và baseline cụ thể, giúp nhóm có thêm một phương án để so sánh trước khi hội tụ.
 2. **Hỗ trợ trực quan hóa Workflow:** Tham gia hỗ trợ vẽ và số hóa các luồng sơ đồ Mermaid/ASCII cho nhóm.
-3. **Phân tích đối soát giải pháp:** Tìm hiểu các ứng dụng Cookpad/Mealime để làm rõ khoảng trống thị trường (Gap).
+3. **Phân tích đối soát giải pháp:** Cùng nhóm xem NotebookLM và Notion AI để làm rõ bước nào công cụ có sẵn đã hỗ trợ được, bước nào vẫn cần Rule và human review.
 
 ### 3.5 Điều khó khăn nhất khi viết Problem Statement là gì?
-Điều khó nhất là **tách bạch giữa Bottleneck và Solution**, và việc **đưa ra một Success Metric thực sự đo lường được bằng số liệu cứng**. Ban đầu tôi rất dễ viết metric chung chung như "giúp chọn món ăn nhanh hơn". Nhờ sự hướng dẫn của nhóm và worksheet, tôi đã biết cách đưa ra con số định lượng cụ thể: *"Giảm thời gian quyết định từ 25 phút xuống dưới 3 phút"* và *"Giảm tỷ lệ lãng phí nguyên liệu trong tủ lạnh xuống < 10%"*.
+Điều khó nhất là **tách bạch giữa bottleneck và solution**, đồng thời đưa ra metric có thể đo. Ban đầu nhóm dễ viết chung chung là “giúp ôn thi nhanh hơn”. Sau khi vẽ workflow, nhóm chuyển sang metric cụ thể: thời gian gom và cấu trúc đề cương từ baseline khoảng 4,5 giờ/môn xuống dưới 1,5 giờ/môn, đồng thời không tăng số phần trọng tâm bị bỏ sót khi đối chiếu với đề cương giảng viên.
 
 ### 3.6 Nếu được làm lại lab này, tôi sẽ Challenge nhóm mạnh hơn ở điểm nào?
-Nếu làm lại, tôi sẽ challenge nhóm mạnh hơn ở phần **Xác thực dinh dưỡng y tế (Nutritional & Health Verification)** khi dùng AI gợi ý thực đơn cho người bệnh. Tôi sẽ ép nhóm thiết kế riêng một bộ Rule kiểm tra đối soát với bảng chỉ dẫn y khoa chuẩn để đảm bảo AI tuyệt đối không gợi ý món ăn chứa thành phần gây dị ứng hoặc ảnh hưởng xấu đến bệnh lý người dùng.
+Nếu làm lại, tôi sẽ challenge nhóm mạnh hơn ở khâu **đo chất lượng đầu ra**: xác định trước danh sách trọng tâm của giảng viên hoặc tiêu chí đối chiếu, rồi ghi số phần bị thiếu/sai thay vì chỉ dựa vào cảm nhận. Tôi cũng sẽ yêu cầu chạy pilot trên hai môn có mức độ tài liệu khác nhau để kiểm tra liệu workflow có thật sự hiệu quả ngoài một trường hợp thuận lợi hay không.
 
 ---
 
@@ -70,7 +68,7 @@ Nếu làm lại, tôi sẽ challenge nhóm mạnh hơn ở phần **Xác thực
 
 Tôi đã tự kiểm tra bài làm của cá nhân và nhóm theo đúng tiêu chí đánh giá trong `README.md`:
 
-- [x] **[12đ cá nhân]** Bùi Hữu Nghĩa (2A202601880) có danh sách 10 problems phong phú (với Problem Rank 1: Khó khăn khi chọn món nên nấu/nên ăn) và Top 3 Problem Cards rõ ràng.
+- [x] **[12đ cá nhân]** Bùi Hữu Nghĩa (2A202601880) có danh sách 10 problems phong phú và Top 3 Problem Cards rõ ràng.
 - [x] **[12đ cá nhân]** Đã pitch trực tiếp bài toán của mình và tích cực challenge làm rõ bài toán của 10 thành viên khác trong nhóm.
 - [x] **[15đ nhóm]** Nhóm có danh sách 33 bài toán từ 11 thành viên và sơ đồ Workflow minh họa cụ thể.
 - [x] **[20đ nhóm]** Nhóm có cấu trúc Problem Statement v0/v1 với đầy đủ các trường thông tin chuẩn bị sẵn sàng cho bước hội tụ cuối.
